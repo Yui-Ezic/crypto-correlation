@@ -1,0 +1,20 @@
+{
+    "name": "yui-ezic/crypto-correlation",
+    "description": "Calculate the correlation to BTC",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Misha Zuiev",
+            "email": "mishan221199@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
