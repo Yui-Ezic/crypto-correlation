@@ -4,6 +4,7 @@ init: docker-down-clear \
 up: docker-up
 down: docker-down
 restart: down up
+calculate: app-calculate
 
 docker-up:
 	docker-compose up -d
@@ -24,3 +25,6 @@ app-init: composer-install
 
 composer-install:
 	docker-compose run --rm php-cli composer install
+
+app-calculate:
+	docker-compose run --rm php-cli composer app calculate
